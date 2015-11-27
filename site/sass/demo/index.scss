@@ -1,0 +1,170 @@
+$bg-col:#f9f9f9;
+$txt-col:#333;
+
+
+body{
+	background-color: $bg-col;
+	color: $txt-col;
+}
+.g-wrap{
+}
+.m-top{
+	.mt-t{
+		border-bottom: 1px solid #e1e1e1;
+	}
+	.mtt-c{
+		width: 900px;
+		height: 30px;
+		line-height: 30px;
+		padding-left: 18px;
+		padding-right: 62px;
+		@extend %h-center;
+		background-color: #f2f2f2;
+	}
+	.mttc-l{
+		@extend %pull-left;
+	}
+	.reg-link{
+		color: #de3c42;
+	}
+	.log-link{
+		
+	}
+	.col-link{
+		
+	}
+	.line{
+		margin: 0 20px;
+	}
+	.mttc-r{
+		@extend %pull-right;
+	}
+	
+
+
+	.mt-c{
+		width: 984px;
+		height: 60px;
+		padding-right: 40px;
+		@extend %h-center;
+	}
+	.logo{
+		@extend %pull-left;
+		margin-top: 10px;
+		margin-left: 22px;
+	}
+	.search{
+		@extend %pull-right;
+		margin-top: 10px;
+		width: 452px;
+		height: 36px;
+		border: 2px solid #ff7a90;
+	}
+
+
+	.mt-b{
+		background-color: #ff7a90;
+	}
+	.nav{
+		width: 1024px;
+		height: 40px;
+		line-height: 40px;
+		@extend %h-center;
+	}
+	.nav li{
+		float: left;
+		margin: 0 15px;
+	}
+	.nav li a{
+		float: left;
+		padding: 0 15px;
+		color: #fff;
+	}
+	.nav li.active a,.nav li a:hover{
+		border-bottom: 2px solid #000;
+		text-decoration: none;
+		color: #000;
+	}
+}
+.m-banner{
+	height: 296px;
+	background: #eae4e8 url(/images/pic/ind-banner.png) no-repeat center top;
+}
+
+.g-goods-wrap{
+	width: 994px;
+	@extend %h-center;
+	.ggw-t{
+		
+		height: 15px;
+		background: url(/images/pic/ind-bg-t.png) no-repeat;
+	}
+	.ggw-c{
+		padding: 0 18px;
+		background: url(/images/pic/ind-bg-c.png) repeat-y;
+
+	}
+	.mgs1-til{
+		padding: 10px 0;
+		font-size: 20px;
+	}
+	.mgs2-til{
+		margin-top: 22px;
+		border-top: 1px dashed #000;
+		font-size: 24px;
+		position: relative;
+		span{
+			position: absolute;
+			width: 130px;
+			height: 26px;
+			line-height: 26px;
+			left: 50%;
+			top: -13px;
+			margin-left: -65px;
+			background-color: #fff;
+			text-align: center;
+		}
+	}
+	.ggw-b{
+		height: 15px;
+		background: url(/images/pic/ind-bg-b.png) no-repeat;
+	}
+}
+.m-gs-1{
+	height: 330px;
+	.mgs1-l{
+		width: 276px;
+		height: 330px;
+		@extend %pull-left;
+	}
+	.msg1-r{
+		width: 680px;
+		padding-left: 2px;
+		position: relative;
+		top: -10px;
+		@extend %pull-right;
+	}
+	.m1-list{
+		@extend %clearfix;
+	}
+	.m1-list li{
+		@extend %pull-left;
+		@include size(158px);
+		border: 1px solid #efeaeb;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+}
+.m-gs-2{
+	margin-top: 20px;
+	.m2-list{
+		@extend %clearfix;
+		padding: 0 2px;
+
+	}
+	.m2-list li{
+		@extend %pull-left;
+		@include size(100px);
+		margin: 3px;
+	}
+}
