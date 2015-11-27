@@ -12,7 +12,5 @@ dist
 build
 
 # My configurations:
-*/site/css/
-*/site/css/*.css
-*/site/.sass-cache/
 /site/.sass-cache
+/site/css
