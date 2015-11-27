@@ -1,0 +1,29 @@
+@charset "utf-8";
+html{color: #333;background: #fff;}
+input:-ms-clear{display:none;}
+
+body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,menu,nav,section{margin: 0;padding: 0;}
+table{border-collapse: collapse;border-spacing: 0;}
+th{text-align:inherit;}
+iframe{display:block;}
+ul,ol{list-style: none;}
+input,img,fieldset,textarea{border: none;}
+img{max-width: 100%;height: auto;}
+strong,b{ font-weight: bold; color: #000;}
+caption,em,i,th{font-style: normal;font-weight: 400;}
+
+button,input,select,textarea,h1,h2,h3,h4,h5,h6{font-size: 100%;}
+h1,h2,h3,h4,h5,h6{font-weight: 100;}
+select,input,img{vertical-align:middle;}
+select,a,input[type="text"],input[type="password"],input[type=submit],button,input[type=button],textarea{outline-style:none;-webkit-appearance:none;border-radius: 0;}
+
+audio,canvas,video{display: inline-block;}
+del{text-decoration: line-through;}
+hr{border: none;border-bottom: 1px solid #cfcfcf;margin-bottom: 8px;height: 10px;}
+
+.clearfix{content: "";display: block;height: 0;clear: both;line-height: 0;visibility: hidden;}
+
+a{text-decoration: none;}
+a:hover{text-decoration: underline;}
+a:focus,*:focus{outline:none;}
+
