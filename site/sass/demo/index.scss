@@ -100,16 +100,17 @@ body{
 		background: url(/images/pic/ind-bg-t.png) no-repeat;
 	}
 	.ggw-c{
-		padding: 0 18px;
 		background: url(/images/pic/ind-bg-c.png) repeat-y;
-
+	}
+	.padd-lr18{
+		padding: 0 18px;
 	}
 	.mgs1-til{
 		padding: 10px 0;
 		font-size: 20px;
 	}
 	.mgs2-til{
-		margin-top: 22px;
+		margin-top: 24px;
 		border-top: 1px dashed #000;
 		font-size: 24px;
 		position: relative;
@@ -124,6 +125,11 @@ body{
 			background-color: #fff;
 			text-align: center;
 		}
+	}
+	.mgs3-til{
+		height: 50px;
+		line-height: 50px;
+		font-size: 20px;
 	}
 	.ggw-b{
 		height: 15px;
@@ -156,7 +162,7 @@ body{
 	}
 }
 .m-gs-2{
-	margin-top: 20px;
+	margin-top: 25px;
 	.m2-list{
 		@extend %clearfix;
 		padding: 0 2px;
@@ -166,5 +172,60 @@ body{
 		@extend %pull-left;
 		@include size(100px);
 		margin: 3px;
+	}
+}
+
+.m-gs-3{
+	@extend %clearfix;
+	.mgs3-l{
+		width: 504px;
+		@extend %pull-left;
+	}
+	.mgs3-r{
+		width: 452px;
+		@extend %pull-right;
+	}
+	.m3-list1{
+		@extend %clearfix;
+	}
+	.m3-list1 li{
+		@extend %pull-left;
+		@include size(240px,340px);
+		margin-right: 12px;
+		margin-bottom: 12px;
+	}
+	.mgs3-r{
+		@extend %pull-right;
+		width: 452px;
+
+	}
+	.m3-list2{
+
+	}
+	.m3-list2 li{
+		margin-bottom: 12px;
+		@include size(452px,164px);
+	}
+	.m3-list2 .spe-list{
+		@include size(452px,340px);
+	}
+}
+
+.banner1{
+	width: 980px;
+	margin: 0 auto;
+}
+
+.m-gs-4{
+	.m4-list{
+		@extend %clearfix;
+		margin-right: -10px;
+	}
+	.m4-list li{
+		float: left;
+		width: 232px;
+		height: 232px;
+		margin-right: 10px;
+		margin-bottom: 10px;
 	}
 }
