@@ -27,8 +27,17 @@ $txt-col:#333;
 .phone-ico{
 	@include slice-sprite(phone-ico);
 }
+.shop-ico{
+	@include slice-sprite(shop-ico);
+}
 
 // ...............................often class.......................
 .bor-r0{
 	border-right: 0!important;
+}
+.mar-lr20{
+	margin: 0 20px;
+}
+.mar-lr10{
+	margin: 0 10px;
 }

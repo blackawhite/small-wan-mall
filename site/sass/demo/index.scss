@@ -29,25 +29,19 @@ body{
 	.col-link{
 		
 	}
-	.line{
-		margin: 0 20px;
-	}
 	.mttc-r{
 		@extend %pull-right;
 	}
-	
 
 
 	.mt-c{
 		width: 984px;
 		height: 60px;
-		padding-right: 40px;
 		@extend %h-center;
 	}
 	.logo{
 		@extend %pull-left;
 		margin-top: 10px;
-		margin-left: 22px;
 	}
 	.search{
 		@extend %pull-right;
@@ -55,8 +49,24 @@ body{
 		width: 452px;
 		height: 36px;
 		border: 2px solid #ff7a90;
+		font-size: 14px;
+		.sh-txt{
+			@extend %pull-left;
+			padding: 10px 4px 10px 6px;
+			width: 382px;
+			#width: 380px;
+		}
+		.sh-btn{
+			@extend %pull-right;
+			@include size(58px,36px);
+			line-height: 36px;
+			text-align: center;
+			color: #fff;
+			background-color: #ff7a90;
+		}
 	}
 	.mt-b{
+		height: 40px;
 		background-color: #ff7a90;
 	}
 	.fiexd-top{
@@ -65,11 +75,15 @@ body{
 		width: 100%;
 		z-index: 999;
 	}
-	.nav{
+	.nav-bar{
 		width: 1024px;
 		height: 40px;
 		line-height: 40px;
 		@extend %h-center;
+	}
+	.nav{
+		@extend %pull-left;
+		font-size: 14px;
 	}
 	.nav li{
 		float: left;
@@ -84,6 +98,23 @@ body{
 		border-bottom: 2px solid #000;
 		text-decoration: none;
 		color: #000;
+	}
+	.shop-cart{
+		position: relative;
+		@extend %pull-right;
+		margin-right: 40px;
+		color: #fff;
+		.shop-link{
+			position: absolute;
+			top: 0;
+			left: -30px;
+			height: 40px;
+			line-height: 40px;
+			font-size: 0;
+			i{
+				margin-top: 10px;
+			}
+		}
 	}
 }
 .m-banner{
