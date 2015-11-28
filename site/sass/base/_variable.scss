@@ -30,10 +30,26 @@ $txt-col:#333;
 .shop-ico{
 	@include slice-sprite(shop-ico);
 }
-
+.up-ico{
+	@include slice-sprite(top-ico);
+}
+.down-ico{
+	@include slice-sprite(down-ico);
+}
+.ck{
+	display: inline-block;
+	@include size(8px);
+	border: 1px solid #ff7a90;
+}
+.cked{
+	@include slice-sprite(ck-ico);
+}
 // ...............................often class.......................
 .bor-r0{
 	border-right: 0!important;
+}
+.bor-t0{
+	border-top: 0!important;
 }
 .mar-lr20{
 	margin: 0 20px;
