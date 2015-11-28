@@ -1,0 +1,59 @@
+@import "compass/utilities/sprites";
+@import "slice/*.png";
+$slice-sprite-dimensions:true;
+
+$bg-col:#f9f9f9;
+$txt-col:#333;
+
+// .............................icon....................
+.com-ico{
+	display: inline-block;
+}
+.zheng-ico{
+	@include slice-sprite(zheng-ico);
+}
+.cart-ico{
+	@include slice-sprite(cart-ico);
+}
+.tui-ico{
+	@include slice-sprite(tui-ico);
+}
+.you-ico{
+	@include slice-sprite(you-ico);
+}
+.time-ico{
+	@include slice-sprite(time-ico);
+}
+.phone-ico{
+	@include slice-sprite(phone-ico);
+}
+.shop-ico{
+	@include slice-sprite(shop-ico);
+}
+.up-ico{
+	@include slice-sprite(top-ico);
+}
+.down-ico{
+	@include slice-sprite(down-ico);
+}
+.ck{
+	display: inline-block;
+	@include size(8px);
+	border: 1px solid #ff7a90;
+}
+.cked{
+	@include slice-sprite(ck-ico);
+}
+// ...............................often class.......................
+.bor-r0{
+	border-right: 0!important;
+}
+.bor-t0{
+	border-top: 0!important;
+}
+.mar-lr20{
+	margin: 0 20px;
+}
+.mar-lr10{
+	margin: 0 10px;
+}

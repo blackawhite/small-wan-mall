@@ -1,0 +1,123 @@
+@charset "utf-8";
+// ................................................................................................often sassMixin................................................
+@mixin size($width, $height:$width){
+        width: $width;
+        height: $height;
+}
+//@extend %ellipsis;
+@mixin ellipsis{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+}
+%ellipsis{
+        @include ellipsis;
+}
+//@include float;
+@mixin float($direction: left,$support-for-ie:false){
+        float: $direction;
+        @if $support-for-ie{
+                _display: inline;
+        }
+}
+@mixin pull-left{
+        @include float(left);
+}
+%pull-left{
+        @include float(left);
+}
+@mixin pull-right{
+        @include float(right);
+}
+%pull-right{
+        @include float(right);
+}
+//@include inline-block;
+@mixin inline-block($alignment: middle,$support-for-ie:true) {
+        display: inline-block;
+        @if $alignment and $alignment != none {
+                vertical-align: $alignment;
+        }
+        @if $support-for-ie {
+                *vertical-align: auto;
+                zoom: 1;
+                *display: inline;
+        }
+}
+%inline-block{
+        @include inline-block;
+}
+//@include position(absolute,top 10px right 20px bottom 20px left 20px);  suitable no width/no height
+@mixin position($position,$args){
+        @each $o in top right bottom left {
+                $i: index($args, $o);
+                        @if $i and $i + 1 <= length($args) and type-of(nth($args, $i + 1)) == number {
+                        #{$o}: nth($args, $i + 1);
+                }
+        }
+        position: $position;
+}
+// @extend %clearfix;
+$legacy-support-for-ie: true !default;
+@mixin clearfix {
+        @if $legacy-support-for-ie {
+                *zoom: 1;
+        }
+        &:before,
+        &:after {
+                content: "";
+                display: table;
+        }
+        &:after {
+                clear: both;
+                overflow: hidden;
+        }
+}
+%clearfix {
+        @include clearfix;
+}
+@mixin min-height($height){
+        min-height: $height;
+        height: auto !important;
+        @if $legacy-support-for-ie {
+                _height: $height;
+        }
+}
+@mixin h-center{
+        margin-left: auto;
+        margin-right: auto;
+}
+%h-center{
+        @include h-center;
+}
+// ............................................................................often class...........................................................................
+.textwrap,.textwrap td,.textwrap th{
+        word-wrap: break-word;
+        word-break: break-all;
+}
+.textwrap-table{
+        table-layout: fixed;
+}
+.hide{
+        display: none!important;
+}
+.show{
+        display: block!important;
+}
+.no-visible{
+        visibility: hidden!important;
+}
+
+.fl{
+        @extend %pull-left;
+}
+.fr{
+        @extend %pull-right;
+}
+.txt-cen{
+        @extend %h-center;
+}
+.txt-rig{
+        text-align: right;
+}
