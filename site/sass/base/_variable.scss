@@ -51,6 +51,9 @@ $txt-col:#333;
 .del-ico{
 	@include slice-sprite(del-ico);
 }
+.col-ico{
+	@include slice-sprite(col-ico);
+}
 .ck{
 	display: inline-block;
 	@include size(8px);

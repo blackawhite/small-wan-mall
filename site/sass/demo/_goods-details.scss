@@ -1,0 +1,146 @@
+#MagnifierWrap2{
+	position: relative;
+	width: 540px;
+}
+
+.MagnifierMain{
+	position: relative;
+	width: 538px;
+	height: 538px;
+	border: 1px solid #c8c8c8;
+}
+.MagnifierMain img{
+	width: 100%;
+}
+.MagnifierDrag{
+	position: absolute;
+	top:0;
+	left: 0;
+	background-color: #ccc;
+	opacity: 0.4;
+	filter:alpha(opacity = 40);
+	cursor: move;
+}
+.MagnifierPop{
+	position: absolute;
+	top:0;
+	overflow: hidden;
+	background:#fff url(http://fan.yoka.com/fan5.0/img/loading.gif) no-repeat center center;
+}
+.MagnifierImg{
+	position: absolute;
+	top:0;
+	left: 0;
+}
+
+.spec-items{
+	position: relative;
+	height: 160px;
+	overflow: hidden;
+	padding-top: 10px;
+	margin: 0 auto;
+}
+.spec-items ul{
+	width: 500%;
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+.spec-items ul *{
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+.spec-items li{
+	width: 150px;
+	height: 150px;
+	padding: 4px;
+	border: 1px solid #c8c8c8;
+	float: left;
+	overflow: hidden;
+	margin: 0 10px;
+	cursor: pointer;
+}
+.spec-items li.on{
+	border-color: #db2726;
+}
+.spec-items li img{
+	width: 100%;
+	-webkit-transform: scale(1,1);
+	-ms-transform: scale(1,1);
+	-o-transform: scale(1,1);
+	transform: scale(1,1);
+}
+.spec-items li.on img{
+	-webkit-transform: scale(1.2,1.2);
+	-ms-transform: scale(1.2,1.2);
+	-o-transform: scale(1.2,1.2);
+	transform: scale(1.2,1.2);
+}
+span.spe_leftBtn,span.spe_rightBtn{
+	position: absolute;
+	bottom: 0px;
+	display: block;
+	width: 20px;
+	height: 160px;
+	line-height: 160px;
+	font-family: "黑体";
+	text-align: center;
+	font-size: 30px;
+	color: #ddd;
+	cursor: default;
+	background-color: #f9f9f9;
+	z-index: 999;
+}
+span.on{
+	background-color: #ccc;
+	color: #999;
+	cursor: pointer;
+}
+span.spe_leftBtn{
+	left: 0;
+}
+span.spe_rightBtn{
+	right: 0;
+}
+
+.gd-top{
+	width: 980px;
+	@extend %clearfix;
+	@extend %h-center;
+	.gdt-l{
+		width: 540px;
+		@extend %pull-left;
+	}
+	.gdt-r{
+		width: 420px;
+		padding-left: 20px;
+		@extend %pull-right;
+	}
+}
+.gdtr-t{
+	padding-bottom: 16px;
+	border-bottom: 1px solid #e1e1e1;
+	position: relative;
+	.gdtr-til{
+		font-size: 18px;
+	}
+	.gdtr-pri{
+		margin-top: 15px;
+		font-size: 24px;
+	}
+	.dis-num{
+		color: #fe6060;
+		margin-left: 25px;
+	}
+	.del-sty{
+		margin-top: 3px;
+		font-size: 14px;
+		color: #999;
+	}
+	.col{
+		right: 10px;
+		bottom: 20px;
+		position: absolute;
+	}
+}
