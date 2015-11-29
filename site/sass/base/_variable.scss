@@ -54,6 +54,9 @@ $txt-col:#333;
 .col-ico{
 	@include slice-sprite(col-ico);
 }
+.dot-ico{
+	@include slice-sprite(dot-ico);
+}
 .ck{
 	display: inline-block;
 	@include size(8px);
@@ -72,6 +75,10 @@ $txt-col:#333;
 .bor-r0{
 	border-right: 0!important;
 }
+.bor-l0{
+	border-left: 0!important;
+}
+
 .bor-t0{
 	border-top: 0!important;
 }
@@ -80,4 +87,10 @@ $txt-col:#333;
 }
 .mar-lr10{
 	margin: 0 10px;
+}
+.mar-t12{
+	margin-top: 12px;
+}
+.padd-l13{
+	padding-left: 13px;
 }
