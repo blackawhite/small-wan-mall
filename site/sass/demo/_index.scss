@@ -17,6 +17,9 @@ body{
 		@extend %h-center;
 		background-color: #f2f2f2;
 	}
+	.mtt-c a:hover{
+		text-decoration: underline;
+	}
 	.mttc-l{
 		@extend %pull-left;
 	}
@@ -260,10 +263,16 @@ body{
 	}
 }
 
+.mf-wrap{
+	background-color: #f9f9f9;
+	margin-top: 30px;
+}
 .m-footer{
 	width: 990px;
 	margin: 0 auto;
+	padding-top: 25px;
 	padding-bottom: 35px;
+	background-color: #f9f9f9;
 	.mf-t{
 		width: 930px;
 		margin-top: 30px;

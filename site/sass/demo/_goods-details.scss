@@ -225,7 +225,7 @@ span.spe_rightBtn{
 	border-top: 2px solid #000;
 }
 .gdb-l{
-	@include size(700px);
+	width: 700px;
 	@extend %pull-left;
 	.tab-list{
 		height: 56px;
@@ -295,11 +295,127 @@ span.spe_rightBtn{
 				}
 			}
 		}
+	}
+	.gs-comment{
+		.gsc-list{
+			@extend %clearfix;
+			min-height: 115px;
+			border-bottom: 1px dashed #e1e1e1;
+		}
+		.gsc-l{
+			@extend %pull-left;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			width: 560px;
+			position: relative;
+			.gscl-l{
+				width: 440px;
+				@extend %pull-left;
+			}
+			.com-txt{
+				line-height: 18px;
+			}
+			.com-pic{
+				margin-top: 8px;
+				@extend %clearfix;
+				li{
+					@extend %pull-left;
+					@include size(48px);
+					border: 1px solid #e1e1e1;
+					margin-right: 3px;
+				}
+			}
+			.com-prop{
+				color: #a1a1a1;
+				line-height: 18px;
+				padding-top: 6px;
+				span{
+					margin-right: 20px;
+				}
+			}
+			.gscl-r{
+				position: absolute;
+				top: 0;
+				right: 10px;
+				bottom: 0;
+				
+				@extend %pull-right;
+				.star-gra{
+					margin-top: 20px;
+					@extend %clearfix;
+					li{
+						@extend %pull-left;
+						margin-right: 5px;
+					}
+				}
+				.zan-wrap{
+					position: absolute;
+					right: 10px;
+					bottom: 14px;
+					cursor: pointer;
+				}
+				.zan-wrap i{
+					vertical-align: -2px;
+				}
+			}
+		}
+		.gsc-r{
+			@extend %pull-right;
+			width: 138px;
+			padding-top: 15px;
+			border-left: 1px solid #e1e1e1;
+			text-align: center;
+			img{
+				@include size(60px);
+				border-radius: 50%;
+			}
+			p{
+				margin-top: 6px;
+			}
+		}
+	}
+	.com-pag-wrap{
+		@extend %clearfix;
+		.com-paging{
+			@extend %pull-right;
+			margin-top: 30px;
+			li{
+				margin-right: 12px;
+				@extend %pull-left;
+			}
+			a{
+				@extend %pull-left;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
 
+		}
 	}
 }
 .gdb-r{
-	@include size(280px);
+	width: 237px;
 	@extend %pull-right;
-
+	.gdbr-til{
+		height: 56px;
+		line-height: 56px;
+		border-bottom: 2px solid #e1e1e1;
+		font-size: 14px;
+	}
+	.gdbr-list{
+		padding-top: 4px;
+		text-align: center;
+		li{
+			margin-top: 10px;
+		}
+		.img-wrap{
+			width: 225px;
+			height: 225px;
+			padding: 5px;
+			border: 1px solid #c8c8c8;
+		}
+		p{
+			line-height: 18px;
+		}
+	}
 }

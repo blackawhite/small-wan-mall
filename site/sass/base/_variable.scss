@@ -57,6 +57,12 @@ $txt-col:#333;
 .dot-ico{
 	@include slice-sprite(dot-ico);
 }
+.star-ico{
+	@include slice-sprite(star-ico);
+}
+.zan-ico{
+	@include slice-sprite(zan-ico);
+}
 .ck{
 	display: inline-block;
 	@include size(8px);
@@ -68,6 +74,9 @@ $txt-col:#333;
 // ...............................often class.......................
 .red-col{
 	color: #fe6060;
+}
+.bg-white{
+	background-color: #fff;
 }
 .del-sty{
 	text-decoration: line-through;
