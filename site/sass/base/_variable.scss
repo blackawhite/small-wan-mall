@@ -36,6 +36,21 @@ $txt-col:#333;
 .down-ico{
 	@include slice-sprite(down-ico);
 }
+.awlgray-ico{
+	@include slice-sprite(awgray-l);
+}
+.awrgray-ico{
+	@include slice-sprite(awgray-r);
+}
+.awlpink-ico{
+	@include slice-sprite(awpink-l);
+}
+.awrpink-ico{
+	@include slice-sprite(awpink-r);
+}
+.del-ico{
+	@include slice-sprite(del-ico);
+}
 .ck{
 	display: inline-block;
 	@include size(8px);
@@ -45,6 +60,12 @@ $txt-col:#333;
 	@include slice-sprite(ck-ico);
 }
 // ...............................often class.......................
+.red-col{
+	color: #fe6060;
+}
+.del-sty{
+	text-decoration: line-through;
+}
 .bor-r0{
 	border-right: 0!important;
 }
