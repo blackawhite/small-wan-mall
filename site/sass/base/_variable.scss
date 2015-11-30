@@ -66,6 +66,9 @@ $txt-col:#333;
 .arowt-ico{
 	@include slice-sprite(arowt-ico);
 }
+.arowb-ico{
+	@include slice-sprite(arowb-ico);
+}
 .ck{
 	display: inline-block;
 	@include size(8px);
