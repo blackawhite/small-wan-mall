@@ -1,14 +1,47 @@
-.crumbs{
-	height: 42px;
-	line-height: 42px;
-	margin-top: 2px;
-	width: 980px;
-	@extend %h-center;
-	color: #b4b4b4;
-}
 .filter{
 	width: 982px;
 	@extend %h-center;
+	.filter-t{
+		min-height: 35px;
+		padding: 18px 10px 8px;
+		@extend %clearfix;
+		background-color: #e7e7e7;
+		.ft-l{
+			@extend %pull-left;
+			width: 70px;
+		}
+		.ft-c{
+			@extend %pull-left;
+			width: 822px;
+		}
+		.ftc-list{
+			@extend %clearfix;
+			li{
+				@extend %pull-left;
+				@extend %ellipsis;
+				@include size(120px,25px);
+				line-height: 25px;
+				background-color: #ff7a90;
+				position: relative;
+				margin-right: 10px;
+				margin-bottom: 10px;
+				text-align: center;
+				color: #fff;
+				i{
+					position: absolute;
+					top: 5px;
+					right: 5px;
+					cursor: pointer;
+				}
+			}
+		}
+		.ft-r{
+			width: 70px;
+			@extend %pull-right;
+			cursor: pointer;
+			color: #a5a5a5;
+		}
+	}
 	.filter-c{
 		@extend %clearfix;
 		padding: 15px 0;
@@ -30,6 +63,7 @@
 			@extend %pull-left;
 			width: 130px;
 			height: 30px;
+			@extend %ellipsis;
 		}
 		i{
 			margin-right: 6px;
@@ -49,6 +83,196 @@
 		cursor: pointer;
 		i{
 			margin-left: 5px;
+		}
+	}
+}
+.gl-wrap{
+	width: 980px;
+	@extend %h-center;
+	.gl-t{
+		height: 46px;
+		padding-top: 16px;
+	}
+	.glt-l{
+		@extend %pull-left;
+		li{
+			@extend %pull-left;
+			@include size(98px,28px);
+			line-height: 28px;
+			text-align: center;
+			border: 1px solid #e7e7e7;
+			margin-right: 10px;
+		}
+		a{
+			@extend %pull-left;
+			width: 100%;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+		.active{
+			background-color: #e7e7e7;
+			a{
+				color: #ff7a90;
+			}
+		}
+	}
+	.glt-r{
+		@extend %pull-right;
+		span{
+			@extend %pull-left;
+			line-height: 30px;
+		}
+		.prev-btn,.next-btn{
+			@include size(28px);
+			line-height: 28px;
+			text-align: center;
+			font-size: 0;
+			border: 1px solid #e1e1e1;
+			cursor: pointer;
+			i{
+				vertical-align: middle;
+			}
+		}
+		.prev-btn{
+			margin-right: 7px;
+			margin-left: 12px;
+		}
+		.next-btn{
+			margin-right: 12px;
+		}
+	}
+	.glt-r{
+
+	}
+	.gl-c{
+		padding-right: 1px;
+		padding-left: 11px;
+		background-color: #fff;
+	}
+	.glc-list{
+		@extend %clearfix;
+		li{
+			@extend %pull-left;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+		a{
+			@extend %pull-left;
+			width: 232px;
+			background-color: #f6f6f6;
+		}
+		.gs-pic{
+
+		}
+		.gs-det{
+			padding: 15px 10px;
+		}
+		.gs-name{
+			@extend %ellipsis;
+		}
+		.gs-price{
+			margin-top: 8px;
+			@extend %clearfix;
+		}
+		.gsp-l{
+			@extend %pull-left;
+			margin-right: 6px;
+		}
+		.gsp-c{
+			@extend %pull-left;
+		}
+		.gsp-r{
+			@extend %pull-right;
+		}
+	}
+	.gl-b{
+		padding: 35px 0 15px;
+		background-color: #fff;
+	}
+	.glb-inner{
+		margin-left: 50%;
+	}
+	.paging{
+		height: 24px;
+		margin-left: -50%;
+		.items,.total,.form{
+			@extend %pull-left;
+		}
+		.items{
+
+		}
+		.item{
+			position: relative;
+			margin-right: 6px;
+			@extend %pull-left;
+			width: 22px;
+			height: 22px;
+			line-height: 22px;
+			border: 1px solid #ededed;
+			color: #333;
+			text-align: center;
+			a{
+				display: inline-block;
+				width: 100%;
+				text-decoration: none;
+			}
+			&:hover{
+				border-color: #000;
+			}
+			&.active{
+				background-color: #000;
+				a{
+					color: #fff;
+				}
+				&:hover{
+					border-color: #ededed;
+				}
+			}
+		}
+		.prev{
+			width: 52px;
+		}
+		.dot{
+			cursor: default;
+			border-color: #fff;
+			&:hover{
+				border-color: #fff;
+			}
+		}
+		.next{
+			width: 52px;
+		}
+		.total{
+			line-height: 24px;
+		}
+		.form{
+			@extend %clearfix;
+			margin-left: 6px;
+			span{
+				@extend %pull-left;
+				line-height: 24px;
+			}
+			.fm-txt{
+			}
+			.fm-inp{
+				@extend %pull-left;
+				width: 52px;
+				height: 22px;
+				border: 1px solid #ededed;
+				margin: 0 6px;
+				text-align: center;
+			}
+			.fm-btn{
+				width: 42px;
+				height: 24px;
+				line-height: 24px;
+				text-align: center;
+				margin-left: 6px;
+				background-color: #000;
+				color: #fff;
+				cursor: pointer;
+			}
 		}
 	}
 }

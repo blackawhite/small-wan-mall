@@ -1,0 +1,18 @@
+// ...................crumbs...............
+.crumbs{
+	height: 42px;
+	line-height: 42px;
+	width: 980px;
+	@extend %h-center;
+	a,i{
+		color: #b4b4b4;
+	}
+	a:last-of-type{
+		color: #6e6e6e;
+		&:hover{
+			text-decoration: none;
+			cursor: default;
+		}
+	}
+}
+
