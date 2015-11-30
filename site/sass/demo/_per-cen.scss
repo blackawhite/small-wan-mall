@@ -90,7 +90,69 @@
 		}
 	}
 }
-
+.mc-con{
+	.ckb{
+		@include size(8px);
+		display: inline-block;
+		margin-right: 10px;
+		border: 1px solid #000;
+	}
+	.ckbed{
+		background-color: #ff7a90;
+		border: 1px solid #ff7a90;
+	}
+	.mccb-list{
+		width: 100%;
+		thead{
+			border-bottom: 2px solid #000;
+			color: #333;
+		}
+		tbody{
+			color: #494949;
+		}
+		td{
+			padding: 16px 0;
+		}
+		.ord-btn2{
+			margin-top: 8px;
+		}
+	}
+	.ml-l{
+		@extend %pull-left;
+		width: 90px;
+		.ckb{
+			vertical-align: middle;
+		}
+		.or-img{
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+	.ml-r{
+		margin-left: 90px;
+	}
+	.num-wrap{
+		margin-left: 26px;
+		@include size(98px,25px);
+		.nw-ope{
+			@extend %pull-left;
+			@include size(23px);
+			line-height: 23px;
+			text-align: center;
+			font-size: 16px;
+			border: 1px solid #e1e1e1;
+			cursor: pointer;
+		}
+		.nw-inp{
+			width: 48px;
+			height: 23px;
+			text-align: center;
+			border-top: 1px solid #e1e1e1;
+			border-bottom: 1px solid #e1e1e1;
+			@extend %pull-left;
+		}
+	}
+}
 .ord-btn{
 	display: inline-block;
 	@include size(50px,25px);
@@ -101,6 +163,14 @@
 		color: #fff;
 	}
 }
+.ord-btn2{
+	display: inline-block;
+	@include size(80px,30px);
+	line-height: 30px;
+	text-align: center;
+	background-color: #ff7a90;
+	color: #fff;
+}
 .order{
 	text-align: center;
 	width: 100%;
@@ -110,9 +180,9 @@
 	td{
 		padding: 8px 0;
 	}
-	.or-img{
-		@include size(48px);
-		margin: 0 auto;
-		border: 1px solid #e1e1e1;
-	}
+}
+.or-img{
+	@include size(48px);
+	margin: 0 auto;
+	border: 1px solid #e1e1e1;
 }
