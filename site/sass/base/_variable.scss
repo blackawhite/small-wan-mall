@@ -84,6 +84,9 @@ $txt-col:#333;
 .bg-white{
 	background-color: #fff;
 }
+.und-line{
+	text-decoration: underline;
+}
 .del-sty{
 	text-decoration: line-through;
 }
@@ -102,6 +105,9 @@ $txt-col:#333;
 .mar-t10{
 	margin-top: 10px;
 }
+.mar-t5{
+	margin-top: 5px;
+}
 .mar-t0{
 	margin-top: 0!important;
 }
@@ -113,4 +119,8 @@ $txt-col:#333;
 }
 .mar-lr20{
 	margin: 0 20px;
+}
+
+.mar-l0{
+	margin-left: 0!important;
 }

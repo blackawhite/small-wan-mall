@@ -1,0 +1,118 @@
+.ns-title{
+	width: 980px;
+	height: 48px;
+	line-height: 48px;
+	font-size: 24px;
+	@extend %h-center;
+}
+
+.per-cen{
+	width: 980px;
+	border-top: 1px solid #000;
+	@extend %h-center;
+	@extend %clearfix;
+}
+.pc-l{
+	width: 206px;
+	@extend %pull-left;
+	li{
+		height: 48px;
+		line-height: 48px;
+		cursor: pointer;
+		i{
+			margin: 0 10px;
+			visibility: hidden;
+		}
+	}
+	.active{
+		border-bottom: 1px solid #e1e1e1;
+		i{
+			visibility: visible;
+		}
+	}
+}
+.pc-r{
+	width: 768px;
+	@extend %pull-right;
+	.pcr-til{
+		font-size: 14px;
+		height: 36px;
+		line-height: 36px;
+		padding-left: 20px;
+	}
+}
+
+.ns-con{
+	.nsc-t{
+		border-bottom: 1px solid #e1e1e1;
+		@extend %clearfix;
+		padding-bottom: 24px;
+	}
+	.nsc-l{
+		width: 100px;
+		text-align: center;
+		@extend %pull-left;
+		.head{
+			@include size(80px);
+			margin: 0 auto;
+			border: 1px solid #ebebeb;
+			border-radius: 50%;
+		}
+		.head-ope{
+			margin-top: 10px;
+		}
+		.head-ope a{
+			color: #ff9aaa;
+		}
+
+	}
+	.nsc-r{
+		margin-left: 100px;
+		line-height: 18px;
+	}
+	.new-ord{
+		line-height: 24px;
+	}
+}
+.fo-con{
+	.ord-tab{
+		height: 46px;
+		line-height: 46px;
+		font-size: 14px;
+		margin-bottom: 18px;
+		li{
+			@extend %pull-left;
+			margin-right: 20px;
+			cursor: pointer;
+			&.active,&:hover{
+				border-bottom: 2px solid #000;
+			}
+		}
+	}
+}
+
+.ord-btn{
+	display: inline-block;
+	@include size(50px,25px);
+	line-height: 25px;
+	text-align: center;
+	&.active,&:hover{
+		background-color: #ff7a90;
+		color: #fff;
+	}
+}
+.order{
+	text-align: center;
+	width: 100%;
+	tr{
+		border-bottom: 1px solid #333;
+	}
+	td{
+		padding: 8px 0;
+	}
+	.or-img{
+		@include size(48px);
+		margin: 0 auto;
+		border: 1px solid #e1e1e1;
+	}
+}
