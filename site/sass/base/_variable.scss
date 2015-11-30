@@ -63,6 +63,9 @@ $txt-col:#333;
 .zan-ico{
 	@include slice-sprite(zan-ico);
 }
+.arowt-ico{
+	@include slice-sprite(arowt-ico);
+}
 .ck{
 	display: inline-block;
 	@include size(8px);
@@ -81,25 +84,30 @@ $txt-col:#333;
 .del-sty{
 	text-decoration: line-through;
 }
+.bor-t0{
+	border-top: 0!important;
+}
 .bor-r0{
 	border-right: 0!important;
 }
 .bor-l0{
 	border-left: 0!important;
 }
-
-.bor-t0{
-	border-top: 0!important;
+.padd-l13{
+	padding-left: 13px;
 }
-.mar-lr20{
-	margin: 0 20px;
+.mar-t10{
+	margin-top: 10px;
 }
-.mar-lr10{
-	margin: 0 10px;
+.mar-t0{
+	margin-top: 0!important;
 }
 .mar-t12{
 	margin-top: 12px;
 }
-.padd-l13{
-	padding-left: 13px;
+.mar-lr10{
+	margin: 0 10px;
+}
+.mar-lr20{
+	margin: 0 20px;
 }

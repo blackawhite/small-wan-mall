@@ -1,0 +1,95 @@
+.g-cy{
+	width: 980px;
+	@extend %h-center;
+}
+.gcy-t{
+	.gcyt-til{
+		height: 52px;
+		line-height: 52px;
+		font-size: 24px;
+	}
+	.gcyt-con{
+		background-color: #ff7a90;
+	}
+	.gcyt-list{
+		@extend %clearfix;
+		padding: 8px 0;
+		font-size: 14px;
+		li{
+			@extend %pull-left;
+			padding: 6px 10px;
+			width: 119px;
+			border-right: 1px solid #e1e1e1;
+			text-align: center;
+		}
+		a,em{
+			color: #fffefe;
+		}
+	}
+}
+.gcy-b{
+	a:hover{
+		text-decoration: underline;
+	}
+	.gcyb-list{
+
+	}
+	.gcybl-t{
+		height: 50px;
+		line-height: 50px;
+		font-size: 16px;
+		color: #ff7a90;
+		border-bottom: 1px solid #d5d5d1;
+		padding-left: 20px;
+		background-color: #f9f9f9;
+		position: relative;
+		.gs-til{
+			@extend %pull-left;
+		}
+		.gs-ope{
+			position: absolute;
+			top: 0;
+			right: 0;
+			@include size(50px);
+			line-height: 50px;
+			text-align: center;
+			i{
+				vertical-align: middle;
+			}
+		}
+	}
+	.gcybl-b{
+		background-color: #f1f1ed;
+		padding: 15px 0;
+		@extend %clearfix;
+	}
+	.lef-cla{
+		width: 449px;
+		padding: 0 20px;
+		border-right: 1px solid #e7e7e7;
+		@extend %pull-left;
+	}
+	.lis-mod{
+		@extend %clearfix;
+		font-size: 14px;
+		margin-top: 15px;
+		.lm-l{
+			@extend %pull-left;
+			width: 80px;
+			color: #32302e;
+		}
+		.lm-r{
+			margin-left: 80px;
+		}
+		.lm-r a{
+			color: #898989;
+			margin-right: 15px;
+			white-space: nowrap;
+		}
+	}
+	.rig-cla{
+		width: 450px;
+		padding:0  20px;
+		@extend %pull-right;
+	}
+}
