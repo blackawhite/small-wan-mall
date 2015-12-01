@@ -46,9 +46,71 @@
 		width: 100px;
 		top: 25px;
 		left: -1px;
+		z-index: 999;
+		background-color: #fff;
 	}
 	.csw-b li{
 		border: 1px solid #e1e1e1;
 		border-top: 0;
+	}
+}
+
+.com-sel-wrap2{
+	border: 1px solid #999;
+	width: 122px;
+	height: 28px;
+	line-height: 28px;
+	position: relative;
+	.csw-t{
+		height: 28px;
+		text-align: center;
+	}
+	.cswt-con{
+		@extend %pull-left;
+		width: 94px;
+	}
+	.cswt-btn{
+		@extend %pull-right;
+		@include size(27px,28px);
+		border-left: 1px solid #ff7a90;
+		font-size: 0;
+		cursor: pointer;
+	}
+	.cswt-btn i{
+		vertical-align: middle;
+	}
+	.csw-b{
+		position: absolute;
+		width: 280px;
+		height: 200px;
+		top: 28px;
+		left: -1px;
+		z-index: 999;
+		border: 1px solid #999;
+		background-color: #fff;
+	}
+	.csw-b ul{
+		height: 200px;
+		overflow-y: auto;
+	}
+	.csw-b li{
+		border: 1px solid #e1e1e1;
+		border-top: 0;
+		a{
+			display: block;
+			padding-left: 20px;
+		}
+		&:hover{
+			background-color: #ccc;
+		}
+	}
+}
+
+
+.star-gra{
+	@extend %clearfix;
+	li{
+		@extend %pull-left;
+		margin-right: 5px;
 	}
 }

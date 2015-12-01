@@ -1,0 +1,71 @@
+.gs-eval{
+	.ge-t{
+		height: 100px;
+		border-top: 1px solid #000;
+		border-bottom: 1px solid #000;
+		padding: 20px;
+		color: #999;
+		table{
+			text-align: center;
+			margin-top: 15px;
+		}
+		.or-img{
+			margin: 0;
+		}
+	}
+	.ge-b{
+		padding: 20px 0 45px 26px;
+		background-color: #f5f5f5;
+	}
+	.gb-comment{
+		@extend %clearfix;
+		margin-top: 48px;
+		.gbc-l{
+			@extend %pull-left;
+			margin-top: 10px;
+		}
+		.gbc-r{
+			@extend %pull-left;
+			border: 1px solid #e1e1e1;
+			@include size(801px,104px);
+			padding: 12px;
+			border-radius: 20px;
+			overflow: hidden;
+		}
+		textarea{
+			@include size(100%);
+			resize: none;
+			background-color: transparent;
+		}
+	}
+	.thesun{
+		height: 60px;
+		margin-top: 13px;
+		.ts-l{
+			@extend %pull-left;
+		}
+		.ts-c{
+			@extend %pull-left;
+			@include size(58px);
+			margin-right: 20px;
+			line-height: 58px;
+			text-align: center;
+			color: #e1e1e1;
+			font-size: 38px;
+			border: 1px solid #e1e1e1;
+		}
+		.ts-r{
+			@extend %pull-left;
+		}
+	}
+	.gb-btn{
+		display: block;
+		margin-top: 20px;
+		@include size(80px,25px);
+		line-height: 25px;
+		text-align: center;
+		background-color: #ff7a90;
+		color: #fff;
+		border-radius: 4px;
+	}
+}

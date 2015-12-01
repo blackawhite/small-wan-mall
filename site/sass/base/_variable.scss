@@ -63,9 +63,13 @@ $txt-col:#333;
 .dot-ico{
 	@include slice-sprite(dot-ico);
 }
+.star-gray-ico{
+	@include slice-sprite(star-gray);
+}
 .star-ico{
 	@include slice-sprite(star-ico);
 }
+
 .zan-ico{
 	@include slice-sprite(zan-ico);
 }
@@ -108,6 +112,9 @@ $txt-col:#333;
 .bor-l0{
 	border-left: 0!important;
 }
+.bor-0{
+	border: 0!important;
+}
 .padd-l13{
 	padding-left: 13px;
 }
@@ -135,6 +142,9 @@ $txt-col:#333;
 
 .mar-l0{
 	margin-left: 0!important;
+}
+.mar-r10{
+	margin-right: 10px;
 }
 
 .com-btn{

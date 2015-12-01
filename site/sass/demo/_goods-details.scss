@@ -342,11 +342,6 @@ span.spe_rightBtn{
 				@extend %pull-right;
 				.star-gra{
 					margin-top: 20px;
-					@extend %clearfix;
-					li{
-						@extend %pull-left;
-						margin-right: 5px;
-					}
 				}
 				.zan-wrap{
 					position: absolute;

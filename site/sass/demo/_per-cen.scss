@@ -213,8 +213,24 @@
 		border: 1px solid #999;
 		input{
 			height: 28px;
-			background: red;
 			width: 100%;
+		}
+	}
+	.spe-al-r{
+		height: 30px;
+		.com-sel-wrap2{
+			@extend %pull-left;
+			margin-right: 10px;
+		}
+		.csw-b{
+			// padding-top: 30px;
+		}
+		.close{
+			position: absolute;
+			top: 8px;
+			right: 8px;
+			z-index: 999;
+			cursor: pointer;
 		}
 	}
 	.error-tip{
@@ -240,6 +256,12 @@
 	.add-ope{
 		padding-left: 80px;
 	}
+}
+.im-con{
+
+}
+.gs-eval{
+	
 }
 .ord-btn{
 	display: inline-block;
@@ -273,4 +295,25 @@
 	@include size(48px);
 	margin: 0 auto;
 	border: 1px solid #e1e1e1;
+}
+
+.nopay{
+	thead tr{
+		font-weight: bold;
+		border-bottom: 1px solid #333;
+	}
+	tbody tr{
+		border-bottom: 1px dashed #e6e6e6;
+	}
+}
+.subtotal{
+	text-align: right;
+	padding: 12px 0;
+	color: #4e4e4e;
+	p{
+		line-height: 18px;
+	}
+	.or-ope{
+		margin-top: 40px;
+	}
 }
