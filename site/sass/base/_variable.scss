@@ -42,11 +42,17 @@ $txt-col:#333;
 .awrgray-ico{
 	@include slice-sprite(awgray-r);
 }
-.awlpink-ico{
-	@include slice-sprite(awpink-l);
+.awtpink-ico{
+	@include slice-sprite(awpink-t);
 }
 .awrpink-ico{
 	@include slice-sprite(awpink-r);
+}
+.awbpink-ico{
+	@include slice-sprite(awpink-b);
+}
+.awlpink-ico{
+	@include slice-sprite(awpink-l);
 }
 .del-ico{
 	@include slice-sprite(del-ico);
@@ -68,6 +74,9 @@ $txt-col:#333;
 }
 .arowb-ico{
 	@include slice-sprite(arowb-ico);
+}
+.close-ico{
+	@include slice-sprite(close-ico);
 }
 .ck{
 	display: inline-block;
@@ -102,6 +111,9 @@ $txt-col:#333;
 .padd-l13{
 	padding-left: 13px;
 }
+.mar-t12{
+	margin-top: 12px;
+}
 .mar-t10{
 	margin-top: 10px;
 }
@@ -123,4 +135,21 @@ $txt-col:#333;
 
 .mar-l0{
 	margin-left: 0!important;
+}
+
+.com-btn{
+	display: inline-block;
+	@include size(105px,35px);
+	line-height: 35px;
+	text-align: center;
+	color: #fff;
+	background-color: #ff7a90;
+}
+.com-btn2{
+	display: inline-block;
+	@include size(103px,33px);
+	line-height: 33px;
+	text-align: center;
+	border: 1px solid #000;
+	color: #000;
 }

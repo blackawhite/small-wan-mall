@@ -110,11 +110,17 @@
 		tbody{
 			color: #494949;
 		}
+		tr{
+			border-bottom: 1px dashed #e1e1e1;
+		}
 		td{
 			padding: 16px 0;
 		}
 		.ord-btn2{
 			margin-top: 8px;
+		}
+		.com-sel-wrap{
+			margin-left: 44px;
 		}
 	}
 	.ml-l{
@@ -151,6 +157,88 @@
 			border-bottom: 1px solid #e1e1e1;
 			@extend %pull-left;
 		}
+	}
+}
+.as-con{
+	.asc-t{
+		width: 333px;
+		height: 93px;
+		padding: 9px 15px 15px;
+		border: 1px solid #e1e1e1;
+		color: #a7a7a7;
+		position: relative;
+	}
+	.asct-t{
+		@extend %clearfix;
+	}
+	.edit{
+		@extend %pull-right;
+		margin-right: 20px;
+	}
+	.asct-b{
+		margin-top: 15px;
+		color: #4e4e4e;
+		line-height: 18px;
+	}
+	.close{
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		cursor: pointer;
+	}
+	.asc-b{
+		.com-btn{
+			margin-top: 27px;
+		}
+	}
+}
+.add-con{
+	.add-line{
+		height: 30px;
+		margin-top: 10px;
+		position: relative;
+	}
+	.al-l{
+		@extend %pull-left;
+		width: 66px;
+		padding-left: 14px;
+		line-height: 30px;
+		text-align: right;
+	}
+	.al-r{
+		@extend %pull-left;
+		width: 380px;
+		height: 28px;
+		padding: 0 6px;
+		border: 1px solid #999;
+		input{
+			height: 28px;
+			background: red;
+			width: 100%;
+		}
+	}
+	.error-tip{
+		position: absolute;
+		width: 240px;
+		line-height: 16px;
+		top: 0;
+		left: 485px;
+	}
+	.ckgray{
+		display: inline-block;
+		@include size(10px);
+		border: 1px solid #999;
+	}
+	.ckgrayed{
+		background-color: #999;
+	}
+	.set-def{
+		height: 30px;
+		padding-top: 16px;
+		padding-left: 80px;
+	}
+	.add-ope{
+		padding-left: 80px;
 	}
 }
 .ord-btn{

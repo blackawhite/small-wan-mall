@@ -15,4 +15,40 @@
 		}
 	}
 }
-
+// ...............................sel box....................
+.com-sel-wrap{
+	width: 98px;
+	height: 23px;
+	line-height: 23px;
+	border: 1px solid #e1e1e1;
+	position: relative;
+	text-align: center;
+	.csw-t{
+		height: 23px;
+	}
+	.cswt-con{
+		@extend %pull-left;
+		width: 72px;
+		text-align: center;
+	}
+	.cswt-btn{
+		@extend %pull-right;
+		@include size(25px,23px);
+		border-left: 1px solid #ff7a90;
+		font-size: 0;
+		cursor: pointer;
+	}
+	.cswt-btn i{
+		vertical-align: middle;
+	}
+	.csw-b{
+		position: absolute;
+		width: 100px;
+		top: 25px;
+		left: -1px;
+	}
+	.csw-b li{
+		border: 1px solid #e1e1e1;
+		border-top: 0;
+	}
+}
