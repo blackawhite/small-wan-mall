@@ -263,6 +263,36 @@
 .gs-eval{
 	
 }
+.mfp-con{
+	border-top: 2px solid #000;
+	.mc-title{
+		margin-top: 8px;
+		height: 30px;
+		line-height: 30px;
+	}
+	.bla-col{
+		font-size: 16px;
+		margin-right: 28px;
+	}
+	.gray-col{
+		cursor: pointer;
+	}
+	.mfp-list{
+		@extend %clearfix;
+		li{
+			@extend %pull-left;
+			width: 220px;
+			padding: 10px;
+			margin: 8px;
+			background-color: #f9f9f9;
+		}
+		.ml-txt{
+			margin-top: 10px;
+			text-align: center;
+			line-height: 18px;
+		}
+	}
+}
 .ord-btn{
 	display: inline-block;
 	@include size(50px,25px);
