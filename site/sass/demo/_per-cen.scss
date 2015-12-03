@@ -293,6 +293,75 @@
 		}
 	}
 }
+.mp-con{
+	.mc-list{
+		@include size(300px,30px);
+		margin-top: 8px;
+		position: relative;
+	}
+	.mar-t31{
+		margin-top: 31px;
+	}
+	.ml-l{
+		@extend %pull-left;
+		width: 70px;
+		line-height: 30px;
+	}
+	.ml-r{
+		@extend %pull-right;
+		width: 216px;
+		height: 28px;
+		border: 1px solid #999;
+		padding: 0 6px;
+	}
+	.ml-r input{
+		@include size(100%);
+	}
+	.com-btn{
+		margin-top: 20px;
+		margin-left: 70px;
+	}
+	.pass-gra{
+		width: 231px;
+		height: 15px;
+		margin-left: 71px;
+		position: absolute;
+		top: 38px;
+		left: -1px;
+		li{
+			@extend %pull-left;
+			@include size(75px,15px);
+			line-height: 15px;
+			margin-right: 2px;
+			background-color: #929292;
+			text-align: center;
+			color: #fff;
+		}
+		.active{
+			background-color: #ff7a90;
+		}
+	}
+}
+.od-con{
+	padding-left: 20px;
+	.oc-t{
+		height: 70px;
+		line-height: 30px;
+		.ot-l,.ot-r{
+			@extend %pull-left;
+			width: 320px;
+		}
+	}
+}
+.spe-nsc-b{
+	padding-left: 20px;
+	margin-top: 20px;
+}
+.spe-or-ope{
+	.com-btn2{
+		margin-right: 320px;
+	}
+}
 .ord-btn{
 	display: inline-block;
 	@include size(50px,25px);

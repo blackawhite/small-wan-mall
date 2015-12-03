@@ -54,7 +54,17 @@
 				</div>
 			</div>
 		</div>
-		<div class="m-banner"></div>
+		<div class="m-banner">
+			<div class="move">
+				<ul class="slides">
+					<li style="background:#eae4e8 url(/images/pic/banner/img1.jpg) 50% 0 no-repeat;"></li>
+					<li style="background:#eae4e8 url(/images/pic/banner/img1.jpg) 50% 0 no-repeat;"></li>
+					<li style="background:#eae4e8 url(/images/pic/banner/img1.jpg) 50% 0 no-repeat;"></li>
+					<li style="background:#eae4e8 url(/images/pic/banner/img1.jpg) 50% 0 no-repeat;"></li>
+					<li style="background:#eae4e8 url(/images/pic/banner/img1.jpg) 50% 0 no-repeat;"></li>
+				</ul>
+			</div>
+		</div>
 		<div class="g-goods-wrap">
 			<div class="ggw-t"></div>
 			<div class="ggw-c">
@@ -143,7 +153,7 @@
 							</ul>
 						</div>
 						<div class="mgs3-l fr">
-							<ul class="m3-list1">
+							<ul class="m3-list1 spe-m3-list1">
 								<li><a href="javascript:;"><img src="/images/pic/goods/d.png" alt=""></a></li>
 								<li><a href="javascript:;"><img src="/images/pic/goods/d.png" alt=""></a></li>
 								<li><a href="javascript:;"><img src="/images/pic/goods/d.png" alt=""></a></li>
@@ -226,5 +236,15 @@
 			<div class="mf-b">COPYRIGHT©2015 小万商城（深圳）贸易有限公司版权所有深ICP备10004995号</div>
 		</div>
 	</div>
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/move.js"></script>
+	<script>
+	$(function(){
+		$('.move').move({
+			directionNav: true,
+			pauseOnAction: false
+		});
+	});
+	</script>
 </body>
 </html>

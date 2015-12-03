@@ -124,13 +124,15 @@ body{
 }
 .m-banner{
 	height: 296px;
-	background: #eae4e8 url(/images/pic/ind-banner.png) no-repeat center top;
+	// background: #eae4e8 url(/images/pic/ind-banner.png) no-repeat center top;
 }
 
 .g-goods-wrap{
 	width: 994px;
 	margin-top: -26px;
 	@extend %h-center;
+	position: relative;
+	z-index: 888;
 	.ggw-t{
 		
 		height: 15px;
@@ -234,6 +236,10 @@ body{
 		margin-right: 12px;
 		margin-bottom: 12px;
 	}
+	.spe-m3-list1 li{
+		margin-right: 0;
+		margin-left: 12px;
+	}
 	.m3-list2{
 
 	}
@@ -313,4 +319,17 @@ body{
 		text-align: center;
 	}
 }
+
+.move{position:relative;height:296px;overflow:hidden;background:url(/images/pic/banner/loading.gif) 50% no-repeat;}
+.slides{position:relative;z-index:1;}
+.slides li{height:296px;}
+.flex-control-nav{position:absolute;bottom:30px;z-index:2;width:100%;text-align:center;}
+.flex-control-nav li{display:inline-block;width:14px;height:14px;margin:0 5px;*display:inline;zoom:1;}
+.flex-control-nav a{display:inline-block;width:14px;height:14px;line-height:40px;overflow:hidden;background:url(/images/pic/banner/dot.png) right 0 no-repeat;cursor:pointer;}
+.flex-control-nav .flex-active{background-position:0 0;}
+
+.flex-direction-nav{position:absolute;z-index:3;width:100%;top:45%;}
+.flex-direction-nav li a{display:block;width:50px;height:50px;overflow:hidden;cursor:pointer;position:absolute;}
+.flex-direction-nav li a.flex-prev{left:40px;background:url(/images/pic/banner/prev.png) center center no-repeat;}
+.flex-direction-nav li a.flex-next{right:40px;background:url(/images/pic/banner/next.png) center center no-repeat;}
 
