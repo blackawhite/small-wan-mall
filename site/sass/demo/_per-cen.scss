@@ -75,18 +75,18 @@
 	}
 }
 .fo-con{
-	.ord-tab{
-		height: 46px;
-		line-height: 46px;
-		font-size: 14px;
-		margin-bottom: 18px;
-		li{
-			@extend %pull-left;
-			margin-right: 20px;
-			cursor: pointer;
-			&.active,&:hover{
-				border-bottom: 2px solid #000;
-			}
+}
+.ord-tab{
+	height: 46px;
+	line-height: 46px;
+	font-size: 14px;
+	margin-bottom: 18px;
+	li{
+		@extend %pull-left;
+		margin-right: 20px;
+		cursor: pointer;
+		&.active,&:hover{
+			border-bottom: 2px solid #000;
 		}
 	}
 }
@@ -345,12 +345,15 @@
 .od-con{
 	padding-left: 20px;
 	.oc-t{
-		height: 70px;
+		@extend %clearfix;
 		line-height: 30px;
 		.ot-l,.ot-r{
 			@extend %pull-left;
 			width: 320px;
 		}
+	}
+	.oc-b{
+		line-height: 30px;
 	}
 }
 .spe-nsc-b{

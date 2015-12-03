@@ -82,6 +82,12 @@ $txt-col:#333;
 .close-ico{
 	@include slice-sprite(close-ico);
 }
+.login-ico{
+	@include slice-sprite(login-ico);
+}
+.arrow-top{
+	@include slice-sprite(arrow-top);
+}
 .ck{
 	display: inline-block;
 	@include size(8px);
@@ -96,6 +102,9 @@ $txt-col:#333;
 }
 .bla-col{
 	color: #000;
+}
+.blu-col{
+	color: #2674d0;
 }
 .gray-col{
 	color: #a0a0a0;
@@ -124,6 +133,16 @@ $txt-col:#333;
 .padd-l13{
 	padding-left: 13px;
 }
+.padd-l20{
+	padding-left: 20px;
+}
+.bor-t1{
+	border-top: 1px solid #000;
+	margin-top: 50px;
+}
+.mar-t20{
+	margin-top: 20px;
+}
 .mar-t12{
 	margin-top: 12px;
 }
@@ -135,6 +154,9 @@ $txt-col:#333;
 }
 .mar-t0{
 	margin-top: 0!important;
+}
+.mar-t6{
+	margin-top: 6px;
 }
 .mar-t12{
 	margin-top: 12px;
