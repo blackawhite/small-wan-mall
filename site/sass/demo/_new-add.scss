@@ -1,0 +1,63 @@
+.use-new{
+	width: 980px;
+	@extend %h-center;
+	.un-title{
+		height: 48px;
+		line-height: 48px;
+		border-top: 1px solid #000;
+		border-bottom: 2px solid #000;
+	}
+	.un-tit{
+		height: 50px;
+		line-height: 50px;
+	}
+	.add-ope{
+		margin-top: 25px;
+	}
+
+	.newadd-con{
+		.buy-list{
+			height: 46px;
+			line-height: 46px;
+			border-bottom: 2px solid #000;
+		}
+		.com-btn{
+			width: 200px;
+		}
+	}
+}
+.pay-way{
+	.pw-t{
+		height: 46px;
+		line-height: 46px;
+		border-bottom: 2px solid #000;
+	}
+	.pw-b{
+		height: 60px;
+		line-height: 60px;
+	}
+	.pb-l{
+		@extend %pull-left;
+	}
+	.pb-c{
+		@extend %pull-left;
+		@include size(120px,30px);
+		border: 1px solid #000;
+		margin: 14px 12px;
+		background: url(/images/pic/zfb.png) no-repeat center center;
+	}
+	.pb-r{
+		@extend %pull-left;
+		cursor: pointer;
+	}
+	.sel-oth{
+		height: 30px;
+	}
+	.so-l{
+		margin-right: 5px;
+		@extend %pull-left;
+	}
+	.so-r{
+		vertical-align: middle;
+	}
+}

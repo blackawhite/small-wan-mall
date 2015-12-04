@@ -82,6 +82,9 @@ $txt-col:#333;
 .close-ico{
 	@include slice-sprite(close-ico);
 }
+.close-whi-ico{
+	@include slice-sprite(close-whi-ico);
+}
 .login-ico{
 	@include slice-sprite(login-ico);
 }

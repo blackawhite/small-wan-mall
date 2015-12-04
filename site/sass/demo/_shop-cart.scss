@@ -1,0 +1,42 @@
+.sc-con{
+	width: 980px;
+	@extend %h-center;
+	.shanchu{
+		cursor: pointer;
+		color: #272636;
+	}
+	.baoyou{
+		height: 38px;
+		line-height: 38px;
+		padding-left: 10px;
+		border: 1px solid #e1e1e1;
+		margin-top: 38px;
+	}
+	.yimian{
+		height: 60px;
+		line-height: 60px;
+		text-align: right;
+	}
+	.sc-ope{
+		text-align: right;
+		a{
+			width: 198px;
+		}
+		.com-btn2{
+			margin-right: 36px;
+		}
+	}
+	.tuijian{
+		margin-top: 26px;
+	}
+	.tuijian-t{
+		height: 40px;
+		line-height: 40px;
+		border-top: 1px solid #e1e1e1;
+		border-bottom: 1px solid #333;
+		font-size: 14px;
+	}
+	.tuijian-b{
+		padding: 28px 0 28px 11px;
+	}
+}

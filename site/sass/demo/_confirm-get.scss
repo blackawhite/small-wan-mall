@@ -1,0 +1,53 @@
+.con-get{
+	width: 980px;
+	@extend %h-center;
+	@extend %clearfix;
+	.cg-title{
+		height: 48px;
+		line-height: 48px;
+		border-bottom: 2px solid #000;
+		border-top: 1px solid #000;
+	}
+	.cgt-top{
+		height: 217px;
+		margin-top: 14px;
+	}
+	.pc-r{
+		@extend %pull-left;
+	}
+	.com-btn{
+		width: 200px;
+	}
+	.pw-con{
+
+	}
+	.pwc-title{
+		height: 56px;
+		line-height: 56px;
+	}
+	.pwc-con{
+		@include size(760px,70px);
+		border: 1px solid #000;
+		ul{
+			@extend %clearfix;
+			margin-top: 19px;
+		}
+		li{
+			@extend %pull-left;
+			@include size(118px,30px);
+			margin: 0 40px;
+			border: 1px solid #a8a8a8;
+
+		}
+
+	}
+	.newadd-con{
+		margin-top: 50px;
+	}
+}
+.zfb{
+	background: url(/images/pic/zfb.png) no-repeat center center;
+}
+.wx{
+	background: url(/images/pic/wx.png) no-repeat center center;
+}
