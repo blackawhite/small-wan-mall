@@ -481,3 +481,99 @@
 		border-radius: 2px;
 	}
 }
+
+.tuihuo-con{
+	.pcr-til{
+		border-bottom: 1px solid #000;
+	}
+	.jindu-wrap{
+		margin-top: 35px;
+	}
+	.jindu-top{
+		@include size(690px,4px);
+		@extend %h-center;
+		background-color: #e0e0e0;
+		li{
+			float: left;
+			@include size(115px,4px);
+			position: relative;
+			i{
+				@include size(16px);
+				position: absolute;
+				top: -6px;
+				right: -8px;
+				background-color: #e0e0e0;
+				border-radius: 50%;
+			}
+		}
+		.first{
+			em{
+				@include size(16px);
+				position: absolute;
+				top: -6px;
+				left: -8px;
+				background-color: #e0e0e0;
+				border-radius: 50%;
+			}
+		}
+		.active{
+			background-color: #fe7890;
+			i,em{
+				background-color: #fe7890;
+			}
+		}
+	}
+	.jindu-bot{
+		@include size(756px,32px);
+		@extend %h-center;
+		line-height: 32px;
+		margin-top: 30px;
+		li{
+			float: left;
+			width: 80px;
+			text-align: center;
+			color: #fcfcfc;
+			background-color: #e0e0e0;
+			margin: 0 14px;
+			border-radius: 10px;
+		}
+		.active{
+			background-color: #fe7890;
+			color: #fff;
+		}
+	}
+	.jindu-tim{
+		margin-top: 20px;
+		color: #f182a2;
+		span{
+			margin-right: 30px;
+		}
+	}
+	.wuliu-infor{
+		margin-top: 60px;
+		p{
+			color: #ff7798;
+		}
+		.wic-list{
+			@include size(296px,33px);
+			border: 1px solid #e1e1e1;
+			border-radius: 10px;
+			overflow: hidden;
+			padding: 0 6px;
+			margin-top: 22px;
+			input{
+				@include size(100%);
+			}
+		}
+	}
+	.wl-btn{
+		margin-top: 22px;
+		display: inline-block;
+		@include size(110px,35px);
+		line-height: 35px;
+		border-radius: 10px;
+		text-align: center;
+		background-color: #ff7991;
+		color: #fff;
+	}
+}
